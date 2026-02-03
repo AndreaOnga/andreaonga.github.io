@@ -1,39 +1,204 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Il Mio Sito</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Ongarato | PhD Student in Statistical Sciences at the University of Padova</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Lora:italic,wght@0,400;0,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f9fbfd;
+            --text-color: #333;
+            --light-text: #666;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header & Hero */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5rem;
+            margin: 20px 0 10px;
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--light-text);
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            font-family: 'Lora', serif;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 25px;
+            padding-right: 20px;
+        }
+
+        /* Publications & Projects */
+        .item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #eee;
+        }
+
+        .item-title {
+            font-weight: 600;
+            display: block;
+        }
+
+        .item-meta {
+            font-size: 0.9rem;
+            color: var(--light-text);
+            font-style: italic;
+        }
+
+        .btn-cv {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn-cv:hover {
+            background-color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.8rem;
+            color: var(--light-text);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>👋 Ciao, sono [Il tuo nome]</h1>
-    <p>Benvenuto sul mio sito GitHub Pages</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Chi sono</h2>
-      <p>
-        Qui puoi scrivere una breve descrizione di te, del progetto
-        o del motivo per cui esiste questo sito.
-      </p>
+<div class="container">
+    <header>
+        <img src="https://via.placeholder.com/160" alt="Your Name" class="profile-img">
+        <h1>Your Name, PhD</h1>
+        <p class="subtitle">Research Fellow in [Your Field] @ [Your University]</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-google-scholar"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Welcome! I am a PhD candidate focusing on <strong>[Your Topic]</strong>. 
+            My research explores the intersection of [A] and [B], with a particular 
+            interest in [Specific Problem]. I am currently working in the [Lab Name] 
+            under the supervision of Prof. [Name].
+        </p>
+        <a href="your-cv.pdf" class="btn-cv"><i class="fas fa-file-pdf"></i> Download CV</a>
     </section>
 
-    <section>
-      <h2>Progetti</h2>
-      <ul>
-        <li><a href="#">Progetto 1</a></li>
-        <li><a href="#">Progetto 2</a></li>
-        <li><a href="#">Progetto 3</a></li>
-      </ul>
-    </section>
-  </main>
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        
+        <div class="item">
+            <span class="item-title">"The impact of X on Y: A novel approach"</span>
+            <span class="item-meta">Journal of Examples, 2025. Authors: You, Someone Else.</span>
+            <br><a href="#">[PDF]</a> <a href="#">[Code]</a>
+        </div>
 
-  <footer>
-    <p>© 2026 - Il tuo nome · Powered by GitHub Pages</p>
-  </footer>
+        <div class="item">
+            <span class="item-title">"Towards a better understanding of Z"</span>
+            <span class="item-meta">International Conference on Science, 2024.</span>
+            <br><a href="#">[Publisher Link]</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="item">
+            <span class="item-title">Project Name/Tool</span>
+            <p>A brief description of the software or dataset you developed during your research.</p>
+            <a href="#"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="item">
+            <span class="item-title">PhD in [Your Field]</span>
+            <span class="item-meta">[University Name], 2022 - Present</span>
+        </div>
+        <div class="item">
+            <span class="item-title">MSc in [Your Field]</span>
+            <span class="item-meta">[University Name], 2020 - 2022</span>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Your Name. Built with ❤️ and hosted on GitHub Pages.
+    </footer>
+</div>
+
 </body>
 </html>
 
